@@ -30,7 +30,10 @@ form {
 
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 0, 0.03);
 }
-.instructions {
+.poem strong {
+  color: #4f301f;
+}
+.user-input {
   width: 80%;
   padding: 16px;
   font-size: 16px;
