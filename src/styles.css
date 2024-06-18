@@ -14,12 +14,20 @@ h1 {
   font-size: 35px;
   line-height: 1.5;
 }
-form {
-  padding: 30px;
+.form-container {
+  padding: 15px 20px;
   background-color: white;
-
-  display: flex;
+  border-radius: 10px;
   margin-bottom: 30px;
+}
+form {
+  display: flex;
+}
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+  font-size: 12px;
 }
 .poem {
   font-size: 14px;
@@ -32,6 +40,9 @@ form {
 }
 .poem strong {
   color: #4f301f;
+}
+.hidden {
+  display: none;
 }
 .user-input {
   width: 80%;
@@ -58,4 +69,18 @@ footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
